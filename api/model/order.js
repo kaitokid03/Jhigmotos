@@ -9,6 +9,7 @@ const orderSchema = mongoose.Schema({
     orderDate: {type:Date, required:true, default:Date.now},
     contact: {type:String, required:true},
     totalprice: {type:Number},
+    
 });
 
 module.exports = mongoose.model('Order', orderSchema);
